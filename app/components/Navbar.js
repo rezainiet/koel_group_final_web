@@ -1,8 +1,8 @@
-"use client"
+"use client";
 // components/Navbar.js
 import Link from "next/link";
 import { useState } from "react";
-import AnimatedLink from "./AnimatedLink";
+import AnimatedLink from "./ui/AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
@@ -22,10 +22,10 @@ const Navbar = () => {
 
     const menuVars = {
         initial: {
-            scaleY: 0,
+            scaleX: 0,
         },
         animate: {
-            scaleY: 1,
+            scaleX: 1,
             transition: {
                 duration: 0.5,
                 ease: [0.12, 0, 0.39, 0],
@@ -58,26 +58,21 @@ const Navbar = () => {
     };
 
     return (
-        <header>
-            <nav className="flex justify-between items-center py-8 lg:py-4 px-2">
+        <header className="text-white top-0 fixed z-10 w-full">
+            <nav className="flex justify-between items-center py-8 lg:py-4 px-12 bg-transparent">
                 <div className="flex items-center gap-[1ch]">
-                    <div className="w-5 h-5 bg-yellow-400 rounded-full" />
-                    <span className="text-sm font-semibold tracking-widest">
-                        PORTFOLIO
+                    <div className="w-5 h-5 bg-[#D3FFFA] rounded-full" />
+                    <span className="text-xl font-semibold tracking-widest">
+                        KOEL SHOP
                     </span>
                 </div>
-                <div className="lg:flex hidden gap-12 text-md text-zinc-400">
-                    <AnimatedLink title="Home" />
-                    <Link href="/projects">
-                        <AnimatedLink title="Projects" />
-                    </Link>
-                    <AnimatedLink title="Contact" />
-                </div>
                 <div
-                    className="cursor-pointer lg:hidden text-md text-black"
+                    className="cursor-pointer lg:text-xl text-md text-white ml-auto"
                     onClick={toggleMenu}
                 >
-                    Menu
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
                 </div>
             </nav>
             <AnimatePresence>
@@ -87,16 +82,18 @@ const Navbar = () => {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        className="fixed left-0 top-0 w-full h-screen origin-top bg-yellow-400 text-black p-10"
+                        className="fixed left-0 top-0 w-full h-screen origin-top bg-[#D3FFFA] text-black p-10"
                     >
                         <div className="flex h-full flex-col">
                             <div className="flex justify-between">
-                                <h1 className="text-lg text-black">Portfolio</h1>
+                                <h1 className="text-xl text-black">KOEL SHOP</h1>
                                 <p
                                     className="cursor-pointer text-md text-black"
                                     onClick={toggleMenu}
                                 >
-                                    Close
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
                                 </p>
                             </div>
                             <motion.div
@@ -104,7 +101,7 @@ const Navbar = () => {
                                 initial="initial"
                                 animate="open"
                                 exit="initial"
-                                className="flex flex-col h-full justify-center font-lora items-center gap-4"
+                                className="flex flex-col h-full justify-center font-lora items-start md:items-center lg:items-center gap-4"
                             >
                                 {navLinks.map((link, index) => (
                                     <div key={index} className="overflow-hidden">
@@ -146,7 +143,7 @@ const MobileNavLink = ({ title, href }) => {
     return (
         <motion.div
             variants={mobileLinkVars}
-            className="text-5xl uppercase text-black"
+            className="text-5xl md:text-7xl mb-3 uppercase text-black"
         >
             <Link href={href}>
                 {title}
