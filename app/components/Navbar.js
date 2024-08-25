@@ -58,7 +58,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="text-white top-0 fixed z-10 w-full">
+        <header className="text-white top-0 fixed z-50 w-full">
             <nav className="flex justify-between items-center py-8 lg:py-4 px-12 bg-transparent">
                 <div className="flex items-center gap-[1ch]">
                     <div className="w-5 h-5 bg-[#D3FFFA] rounded-full" />
