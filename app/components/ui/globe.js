@@ -18,6 +18,7 @@ export function Globe({ globeConfig, data }) {
 
     const defaultProps = {
         pointSize: 1,
+        ambientLight: "#38bdf8",
         atmosphereColor: "#ffffff",
         showAtmosphere: true,
         atmosphereAltitude: 0.1,
@@ -173,7 +174,9 @@ export function WebGLRendererConfig() {
 }
 
 export function World(props) {
+    console.dir(props)
     const { globeConfig } = props;
+    console.log(globeConfig)
     const scene = new Scene();
     scene.fog = new Fog(0xffffff, 400, 2000);
     return (
