@@ -6,10 +6,10 @@ import AnimatedLink from "./ui/AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
-    { title: "What we do", href: "/" },
+    { title: "sustainability", href: "/sustainability" },
     { title: "How it works", href: "/" },
     { title: "Case studies", href: "/" },
-    { title: "About", href: "/" },
+    { title: "About", href: "/about" },
     { title: "Contact", href: "/" },
 ];
 
@@ -18,6 +18,10 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setOpen((prevOpen) => !prevOpen);
+    };
+
+    const closeMenu = () => {
+        setOpen(false);
     };
 
     const menuVars = {
@@ -62,10 +66,14 @@ const Navbar = () => {
             <nav className="flex justify-between items-center py-8 lg:py-4 px-12 bg-transparent">
                 <div className="flex items-center gap-[1ch]">
                     <div className="w-5 h-5 bg-[#D3FFFA] rounded-full" />
-                    <span className="text-xl font-semibold tracking-widest">
-                        KOEL GROUP
-                    </span>
+
+                    <Link href="/">
+                        <span className="text-xl font-semibold tracking-widest" onClick={closeMenu}>
+                            KOEL GROUP
+                        </span>
+                    </Link>
                 </div>
+
                 <div
                     className="cursor-pointer lg:text-xl text-md text-white ml-auto"
                     onClick={toggleMenu}
@@ -108,6 +116,7 @@ const Navbar = () => {
                                         <MobileNavLink
                                             title={link.title}
                                             href={link.href}
+                                            closeMenu={closeMenu}  // Pass closeMenu function here
                                         />
                                     </div>
                                 ))}
@@ -116,7 +125,7 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </header>
+        </header >
     );
 };
 
@@ -139,13 +148,13 @@ const mobileLinkVars = {
     },
 };
 
-const MobileNavLink = ({ title, href }) => {
+const MobileNavLink = ({ title, href, closeMenu }) => {
     return (
         <motion.div
             variants={mobileLinkVars}
             className="text-5xl md:text-7xl mb-3 uppercase text-black"
         >
-            <Link href={href}>
+            <Link href={href} onClick={closeMenu}> {/* Close menu on link click */}
                 {title}
             </Link>
         </motion.div>

@@ -36,14 +36,14 @@ const OurBusiness = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row min-h-screen w-full">
+        <div className="flex flex-col md:flex-row  w-full">
             {/* Static Text Section */}
             <div className="bg-black/70 text-white flex items-center justify-center w-full md:w-1/4 h-[20rem] md:h-auto p-8">
                 <h2 className="text-3xl font-bold">Other Businesses</h2>
             </div>
 
             {/* Carousel Section */}
-            <div className="relative w-full md:w-3/4 overflow-hidden">
+            <div className="relative w-full h-full md:w-3/4 overflow-hidden">
                 <motion.div
                     className="flex"
                     initial={{ x: 0 }}
@@ -67,7 +67,7 @@ const OurBusiness = () => {
                 </motion.div>
 
                 {/* Navigation Buttons */}
-                <div className="absolute bottom-4 w-full flex justify-between px-4">
+                {/* <div className="absolute bottom-4 w-full flex justify-between px-4">
                     <button
                         onClick={handlePrev}
                         className="px-4 py-2 bg-black text-white rounded"
@@ -80,7 +80,7 @@ const OurBusiness = () => {
                     >
                         Next
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );
