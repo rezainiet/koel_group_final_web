@@ -7,10 +7,10 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
     { title: "sustainability", href: "/sustainability" },
-    { title: "How it works", href: "/" },
-    { title: "Case studies", href: "/" },
+    { title: "CSR", href: "/csr" },
+    // { title: "Case studies", href: "/" },
     { title: "About", href: "/about" },
-    { title: "Contact", href: "/" },
+    { title: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
