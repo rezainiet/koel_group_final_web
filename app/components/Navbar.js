@@ -63,7 +63,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-[1ch]">
                     <div className="w-5 h-5 bg-[#D3FFFA] rounded-full" />
                     <span className="text-xl font-semibold tracking-widest">
-                        KOEL SHOP
+                        KOEL GROUP
                     </span>
                 </div>
                 <div
@@ -86,7 +86,7 @@ const Navbar = () => {
                     >
                         <div className="flex h-full flex-col">
                             <div className="flex justify-between">
-                                <h1 className="text-xl text-black">KOEL SHOP</h1>
+                                <h1 className="text-xl text-black">KOEL GROUP</h1>
                                 <p
                                     className="cursor-pointer text-md text-black"
                                     onClick={toggleMenu}

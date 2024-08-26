@@ -4,6 +4,7 @@ import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
+    textColor = "white",
     words = "",
     className,
     filter = true,
@@ -35,7 +36,8 @@ export const TextGenerateEffect = ({
                 {wordsArray.map((word, idx) => (
                     <motion.span
                         key={word + idx}
-                        className="text-white text-4xl md:text-6xl lg:text-7xl font-bold opacity-0" // Apply color and size here
+                        className={`text-${textColor} text-4xl md:text-6xl lg:text-7xl font-bold opacity-0`} // Apply color and size here
+                        // className="text-white text-4xl md:text-6xl lg:text-7xl font-bold opacity-0" // Apply color and size here
                         style={{
                             filter: filter ? "blur(10px)" : "none",
                         }}
