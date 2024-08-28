@@ -3,7 +3,14 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
-import { TextGenerateEffect } from '../components/ui/text-generate-effect'
+import { TextGenerateEffect } from '../components/ui/text-generate-effect';
+import csr from "@/public/images/CSR/csr.jpg"
+import education from "@/public/images/CSR/education.jpg"
+import environment from "@/public/images/CSR/environment.jpg"
+import community from "@/public/images/CSR/community.jpg"
+import health from "@/public/images/CSR/health.jpg"
+import joy from "@/public/images/CSR/joy.jpg"
+import Textile from "@/public/images/CSR/Textile.jpg"
 
 const CSR = () => {
     return (
@@ -22,7 +29,7 @@ const CSR = () => {
 
                 {/* Introduction Section with Image */}
                 <motion.div
-                    className="grid grid-cols-1 lg:grid-cols-2 gap-16"
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-center"
                 >
                     <motion.div className="space-y-8"
                         initial={{ opacity: 0, x: -100 }}
@@ -45,7 +52,7 @@ const CSR = () => {
                         style={{ originY: 0 }}
                     >
                         <Image
-                            src="http://via.placeholder.com/1280x720"
+                            src={csr}
                             alt="CSR Initiatives"
                             width={600}
                             height={400}
@@ -68,7 +75,7 @@ const CSR = () => {
                             viewport={{ once: false, amount: 0.5 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={education}
                                 alt="Education"
                                 width={600}
                                 height={400}
@@ -111,7 +118,7 @@ const CSR = () => {
                             className="order-1 lg:order-2"
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={environment}
                                 alt="Environment"
                                 width={600}
                                 height={400}
@@ -129,7 +136,7 @@ const CSR = () => {
                             style={{ originY: 0 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={community}
                                 alt="Community Development"
                                 width={600}
                                 height={400}
@@ -172,7 +179,7 @@ const CSR = () => {
                             className="order-1 lg:order-2"
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={health}
                                 alt="Good Health"
                                 width={600}
                                 height={400}
@@ -203,7 +210,7 @@ const CSR = () => {
                             className="order-1 lg:order-2"
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={joy}
                                 alt="Joy of Giving"
                                 width={600}
                                 height={400}
@@ -221,7 +228,7 @@ const CSR = () => {
                             style={{ originY: 0 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={Textile}
                                 alt="Textile"
                                 width={600}
                                 height={400}

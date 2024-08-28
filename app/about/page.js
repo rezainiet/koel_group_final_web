@@ -4,6 +4,11 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 import { TextGenerateEffect } from '../components/ui/text-generate-effect'
+import ourJourney from '@/public/images/about_page/our_journey.jpg'
+import recycling from '@/public/images/about_page/recycling.jpg'
+import agriculture_02 from '@/public/images/about_page/agriculture_02.jpg'
+import e_commerce from '@/public/images/about_page/e-commerce.jpg'
+import construction from '@/public/images/about_page/construction.jpg'
 
 const About = () => {
     return (
@@ -49,8 +54,8 @@ const About = () => {
                         style={{ originY: 0 }}
                     >
                         <Image
-                            src="http://via.placeholder.com/1280x720"
-                            alt="Koel Group"
+                            src={ourJourney}
+                            alt="Koel Group Journey"
                             width={600}
                             height={400}
                             className="rounded-lg shadow-lg"
@@ -73,7 +78,7 @@ const About = () => {
                             viewport={{ once: false, amount: 0.5 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={recycling}
                                 alt="Jayqo Textile"
                                 width={600}
                                 height={400}
@@ -116,7 +121,7 @@ const About = () => {
                             className="order-1 lg:order-2"
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={agriculture_02}
                                 alt="Anisha Agricultural"
                                 width={600}
                                 height={400}
@@ -134,7 +139,7 @@ const About = () => {
                             style={{ originY: 0 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={e_commerce}
                                 alt="Koel.shop"
                                 width={600}
                                 height={400}
@@ -177,7 +182,7 @@ const About = () => {
                             className="order-1 lg:order-2"
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={construction}
                                 alt="Quest Developers"
                                 width={600}
                                 height={400}

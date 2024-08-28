@@ -1,4 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import koelGroupLogo from "@/public/images/logo/KOEL_GROUP_logo-01.png"
 
 const Footer = () => {
     const thisYear = new Date().getFullYear();
@@ -13,16 +16,16 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-400 hover:text-white">First Link</a>
+                                <a className="text-gray-400 hover:text-white">Corporate Culture</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Second Link</a>
+                                <a className="text-gray-400 hover:text-white">Landmarks</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Third Link</a>
+                                <a className="text-gray-400 hover:text-white">One Step Ahead</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                                <a className="text-gray-400 hover:text-white">People Engagement</a>
                             </li>
                         </nav>
                     </div>
@@ -33,36 +36,42 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-400 hover:text-white">First Link</a>
+                                <a className="text-gray-400 hover:text-white">Garments</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Second Link</a>
+                                <a className="text-gray-400 hover:text-white">Retail Business</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Third Link</a>
+                                <a className="text-gray-400 hover:text-white">Agro</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                                <a className="text-gray-400 hover:text-white">Construction</a>
+                            </li>
+                            <li>
+                                <a className="text-gray-400 hover:text-white">Medical & Diagnostic</a>
+                            </li>
+                            <li>
+                                <a className="text-gray-400 hover:text-white">Value Addition & Services</a>
                             </li>
                         </nav>
                     </div>
                     {/* Third Column */}
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                         <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-                            our CLARIFICATION
+                            Our CLARIFICATION
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-400 hover:text-white">First Link</a>
+                                <a className="text-gray-400 hover:text-white">Statistics</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Second Link</a>
+                                <a className="text-gray-400 hover:text-white">Compliance</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Third Link</a>
+                                <a className="text-gray-400 hover:text-white">R & D</a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                                <a className="text-gray-400 hover:text-white">Learning & Development</a>
                             </li>
                         </nav>
                     </div>
@@ -77,7 +86,7 @@ const Footer = () => {
                                     htmlFor="footer-field"
                                     className="leading-7 text-sm text-gray-400"
                                 >
-                                    Placeholder
+                                    Enter your email
                                 </label>
                                 <input
                                     type="text"
@@ -86,35 +95,32 @@ const Footer = () => {
                                     className="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-[#D3FFFA] focus:border-[#D3FFFA] text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 />
                             </div>
-                            <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-[#D3FFFA] border-0 py-2 px-6 focus:outline-none hover:bg-[#D3FFFA] rounded">
-                                Button
+                            <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-[#6AC9D0] border-0 py-2 px-6 focus:outline-none hover:bg-[#59b8be] rounded">
+                                Subscribe
                             </button>
                         </div>
                         <p className="text-gray-500 text-sm mt-2 md:text-left text-center">
-                            lorem ipsum somefof
+                            Subscribe to get
                             <br className="lg:block hidden" />
-                            waistcoat green juice
+                            Our latest updates
                         </p>
                     </div>
                 </div>
             </div>
             <div className="bg-gray-800 bg-opacity-75">
                 <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            className="w-10 h-10 text-white p-2 bg-[#D3FFFA] rounded-full"
-                            viewBox="0 0 24 24"
-                        >
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                        <span className="ml-3 text-xl">KoelGroup</span>
-                    </a>
+                    <Link href="/">
+                        <span className="relative w-6 h-6 sm:w-24 sm:h-8 lg:w-28 lg:h-10 cursor-pointer">
+                            <Image
+                                src={koelGroupLogo}
+                                alt="Logo of koel group!"
+                                width={150}
+                                // layout='fill'
+                                objectFit='contain' // Ensures the image fits within the container without cropping
+                                objectPosition='center'
+                            />
+                        </span>
+                    </Link>
                     <p className="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
                         © {thisYear} KoelGroup —
                         <a

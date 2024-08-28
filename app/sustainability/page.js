@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
 import { TextGenerateEffect } from '../components/ui/text-generate-effect';
+import sustainability from "@/public/images/sustainability/sustainability.jpg"
+import ecoFriendly from "@/public/images/sustainability/eco-friendly.jpg"
+import sourcing from "@/public/images/sustainability/sourcing.jpg"
+import programmes from "@/public/images/sustainability/programmes.jpg"
 
 const Sustainability = () => {
     return (
@@ -29,7 +33,7 @@ const Sustainability = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                     >
-                        <h2 className="text-3xl font-bold text-white">Our Commitment to Sustainability</h2>
+                        <h2 className="text-3xl font-bold text-[#6AC9D0]">Our Commitment to Sustainability</h2>
                         <p className="text-lg leading-relaxed">
                             At Koel Group, we prioritize sustainability in all our operations. From innovative recycling methods to eco-friendly practices, our goal is to minimize environmental impact while maximizing positive social contributions. We are dedicated to leading by example and driving change through responsible practices.
                         </p>
@@ -44,7 +48,7 @@ const Sustainability = () => {
                         style={{ originY: 0 }}
                     >
                         <Image
-                            src="http://via.placeholder.com/1280x720"
+                            src={sustainability}
                             alt="Sustainability"
                             width={600}
                             height={400}
@@ -67,7 +71,7 @@ const Sustainability = () => {
                             viewport={{ once: false, amount: 0.5 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={ecoFriendly}
                                 alt="Sustainable Practice 1"
                                 width={600}
                                 height={400}
@@ -81,7 +85,7 @@ const Sustainability = () => {
                             viewport={{ once: false, amount: 0.5 }}
                             className="space-y-4"
                         >
-                            <h2 className="text-2xl font-semibold text-white">Eco-Friendly Manufacturing</h2>
+                            <h2 className="text-2xl font-semibold text-[#6AC9D0] ">Eco-Friendly Manufacturing</h2>
                             <p className="text-lg leading-relaxed">
                                 We use state-of-the-art technology to reduce waste and energy consumption in our manufacturing processes. Our facilities are designed to operate with minimal environmental impact, and we continuously seek ways to improve our sustainability practices.
                             </p>
@@ -97,7 +101,7 @@ const Sustainability = () => {
                             viewport={{ once: false, amount: 0.5 }}
                             className="order-2 lg:order-1 space-y-4"
                         >
-                            <h2 className="text-2xl font-semibold text-white">Sustainable Sourcing</h2>
+                            <h2 className="text-2xl font-semibold text-[#6AC9D0] ">Sustainable Sourcing</h2>
                             <p className="text-lg leading-relaxed">
                                 Our materials are sourced from suppliers who adhere to sustainable practices. We prioritize partnerships with those committed to reducing their environmental footprint and ensuring fair labor practices.
                             </p>
@@ -110,7 +114,7 @@ const Sustainability = () => {
                             className="order-1 lg:order-2"
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={sourcing}
                                 alt="Sustainable Sourcing"
                                 width={600}
                                 height={400}
@@ -128,7 +132,7 @@ const Sustainability = () => {
                             style={{ originY: 0 }}
                         >
                             <Image
-                                src="http://via.placeholder.com/1280x720"
+                                src={programmes}
                                 alt="Sustainable Practice 3"
                                 width={600}
                                 height={400}
@@ -142,7 +146,7 @@ const Sustainability = () => {
                             viewport={{ once: false, amount: 0.5 }}
                             className="space-y-4"
                         >
-                            <h2 className="text-2xl font-semibold text-white">Community Engagement</h2>
+                            <h2 className="text-2xl font-semibold text-[#6AC9D0]">Community Engagement</h2>
                             <p className="text-lg leading-relaxed">
                                 We are actively involved in community initiatives aimed at promoting environmental conservation and social responsibility. Our efforts include educational programs, community clean-up events, and partnerships with local organizations.
                             </p>

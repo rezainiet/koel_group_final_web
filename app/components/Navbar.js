@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import AnimatedLink from "./ui/AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+import koelGroupLogo from "@/public/images/logo/KOEL_GROUP_logo-01.png"
 
 const navLinks = [
     { title: "sustainability", href: "/sustainability" },
@@ -64,15 +66,24 @@ const Navbar = () => {
     return (
         <header className="text-white top-0 fixed z-50 w-full">
             <nav className="flex justify-between items-center py-8 lg:py-4 px-12 bg-transparent">
-                <div className="flex items-center gap-[1ch]">
-                    <div className="w-5 h-5 bg-[#D3FFFA] rounded-full" />
+                <div className="flex items-center gap-2 md:gap-3">
+                    {/* Circular logo background */}
 
+                    {/* Logo Image */}
                     <Link href="/">
-                        <span className="text-xl font-semibold tracking-widest" onClick={closeMenu}>
-                            KOEL GROUP
+                        <span className="relative w-6 h-6 sm:w-24 sm:h-8 lg:w-28 lg:h-10 cursor-pointer" onClick={closeMenu}>
+                            <Image
+                                src={koelGroupLogo}
+                                alt="Logo of koel group!"
+                                width={150}
+                                // layout='fill'
+                                objectFit='contain' // Ensures the image fits within the container without cropping
+                                objectPosition='center'
+                            />
                         </span>
                     </Link>
                 </div>
+
 
                 <div
                     className="cursor-pointer lg:text-xl text-md text-white ml-auto"
@@ -94,7 +105,18 @@ const Navbar = () => {
                     >
                         <div className="flex h-full flex-col">
                             <div className="flex justify-between">
-                                <h1 className="text-xl text-black">KOEL GROUP</h1>
+                                <Link href="/">
+                                    <span className="relative w-6 h-6 sm:w-24 sm:h-8 lg:w-28 lg:h-10 cursor-pointer" onClick={closeMenu}>
+                                        <Image
+                                            src={koelGroupLogo}
+                                            alt="Logo of koel group!"
+                                            width={150}
+                                            // layout='fill'
+                                            objectFit='contain' // Ensures the image fits within the container without cropping
+                                            objectPosition='center'
+                                        />
+                                    </span>
+                                </Link>
                                 <p
                                     className="cursor-pointer text-md text-black"
                                     onClick={toggleMenu}
