@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import koelGroupLogo from "@/public/images/logo/KOEL_GROUP_logo-01.png"
+import koelGroupLogo from "@/public/images/logo/KOEL_GROUP_logo-01.png";
 
 const Footer = () => {
     const thisYear = new Date().getFullYear();
@@ -16,16 +16,24 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-400 hover:text-white">Corporate Culture</a>
+                                <Link href="/corporate-culture" className="text-gray-400 hover:text-white">
+                                    Corporate Culture
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Landmarks</a>
+                                <Link href="/landmark" className="text-gray-400 hover:text-white">
+                                    Landmarks
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">One Step Ahead</a>
+                                <Link href="/one-step-ahead" className="text-gray-400 hover:text-white">
+                                    One Step Ahead
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">People Engagement</a>
+                                <Link href="/people-engagement" className="text-gray-400 hover:text-white">
+                                    People Engagement
+                                </Link>
                             </li>
                         </nav>
                     </div>
@@ -36,22 +44,34 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-400 hover:text-white">Garments</a>
+                                <Link href="/garments" className="text-gray-400 hover:text-white">
+                                    Garments
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Retail Business</a>
+                                <Link href="/retail-business" className="text-gray-400 hover:text-white">
+                                    Retail Business
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Agro</a>
+                                <Link href="/agro" className="text-gray-400 hover:text-white">
+                                    Agro
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Construction</a>
+                                <Link href="/construction" className="text-gray-400 hover:text-white">
+                                    Construction
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Medical & Diagnostic</a>
+                                <Link href="/medical-diagnostic" className="text-gray-400 hover:text-white">
+                                    Medical & Diagnostic
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Value Addition & Services</a>
+                                <Link href="/value-addition-services" className="text-gray-400 hover:text-white">
+                                    Value Addition & Services
+                                </Link>
                             </li>
                         </nav>
                     </div>
@@ -62,16 +82,24 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-400 hover:text-white">Statistics</a>
+                                <Link href="/statistics" className="text-gray-400 hover:text-white">
+                                    Statistics
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Compliance</a>
+                                <Link href="/compliance" className="text-gray-400 hover:text-white">
+                                    Compliance
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">R & D</a>
+                                <Link href="/rnd" className="text-gray-400 hover:text-white">
+                                    R & D
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-white">Learning & Development</a>
+                                <Link href="/learning-development" className="text-gray-400 hover:text-white">
+                                    Learning & Development
+                                </Link>
                             </li>
                         </nav>
                     </div>
@@ -110,27 +138,21 @@ const Footer = () => {
             <div className="bg-gray-800 bg-opacity-75">
                 <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
                     <Link href="/">
-                        <span className="relative w-6 h-6 sm:w-24 sm:h-8 lg:w-28 lg:h-10 cursor-pointer">
+                        <div className="relative w-6 h-6 sm:w-24 sm:h-8 lg:w-28 lg:h-10 cursor-pointer">
                             <Image
                                 src={koelGroupLogo}
                                 alt="Logo of koel group!"
                                 width={150}
-                                // layout='fill'
-                                objectFit='contain' // Ensures the image fits within the container without cropping
+                                objectFit='contain'
                                 objectPosition='center'
                             />
-                        </span>
+                        </div>
                     </Link>
                     <p className="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
-                        © {thisYear} KoelGroup —
-                        <a
-                            href="https://twitter.com/koelgroup"
-                            className="text-gray-500 ml-1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        © {thisYear} Koel Group —
+                        <Link href="https://twitter.com/koelgroup" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">
                             @koelgroup
-                        </a>
+                        </Link>
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <a className="text-gray-400">
@@ -168,21 +190,19 @@ const Footer = () => {
                                 viewBox="0 0 24 24"
                             >
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                <path d="M16 12h-6M12 16v-6"></path>
                             </svg>
                         </a>
                         <a className="ml-3 text-gray-400">
                             <svg
                                 fill="currentColor"
-                                stroke="currentColor"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                strokeWidth="0"
+                                strokeWidth="2"
                                 className="w-5 h-5"
                                 viewBox="0 0 24 24"
                             >
-                                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                <path d="M21 8a6 6 0 00-9.27-4.84A6 6 0 005 8a6 6 0 006 6h5a6 6 0 005-6z"></path>
                             </svg>
                         </a>
                     </span>
