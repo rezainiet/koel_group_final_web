@@ -1,28 +1,23 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { useTransform, useSpring, useScroll } from "framer-motion";
 import { useMemo } from "react";
 
 export const useScrollTransforms = () => {
     const { scrollY } = useScroll();
 
-    // Use a memoized array of transformations and springs
-    const springs = useMemo(() => {
-        // Initialize the transformations and springs array
-        const transforms = [];
-        const springArray = [];
-
-        for (let index = 0; index < 6; index++) {
-            const transform = useTransform(scrollY, [0, 1000], [0, -index * 10]);
-            transforms.push(transform);
-        }
-
-        // Initialize springs for each transform
-        transforms.forEach(transform => {
-            springArray.push(useSpring(transform, { stiffness: 300, damping: 30 }));
-        });
-
-        return springArray;
+    // Create a memoized array of transforms
+    const transforms = useMemo(() => {
+        // Generate transformations based on scrollY
+        return Array.from({ length: 6 }, (_, index) =>
+            useTransform(scrollY, [0, 1000], [0, -index * 10])
+        );
     }, [scrollY]);
+
+    // Create a memoized array of springs based on transforms
+    const springs = useMemo(() => {
+        return transforms.map(transform =>
+            useSpring(transform, { stiffness: 300, damping: 30 })
+        );
+    }, [transforms]);
 
     return springs;
 };

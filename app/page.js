@@ -9,10 +9,10 @@ import ProductGrid from "./components/ProductGrid";
 export default function Home() {
   return (
     <main>
-      <Hero2 />
-      <GithubGlobe />
-      <OurBusiness />
-      <Sustainability />
+      {/* <Hero2 /> */}
+      {/* <GithubGlobe /> */}
+      {/* <OurBusiness /> */}
+      {/* <Sustainability /> */}
       <ProductGrid />
       {/* <BodyShape /> */}
       {/* <Statistics /> */}
