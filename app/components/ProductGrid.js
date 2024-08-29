@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -10,7 +9,7 @@ import ErrorBoundary from './ErrorBoundary';
 
 const ProductGrid = () => {
     const [isClient, setIsClient] = useState(false);
-    const springs = useScrollTransforms();
+    const transforms = useScrollTransforms();
 
     useEffect(() => {
         setIsClient(true);
@@ -47,7 +46,7 @@ const ProductGrid = () => {
                                 <motion.div
                                     key={index}
                                     className='bg-white transition-shadow duration-300 rounded-lg overflow-hidden'
-                                    style={{ y: springs[index] }}
+                                    style={{ y: transforms[index] }}
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, delay: index * 0.1 }}

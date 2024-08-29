@@ -1,4 +1,4 @@
-import { useTransform, useSpring, useScroll } from "framer-motion";
+import { useTransform, useScroll } from "framer-motion";
 import { useMemo } from "react";
 
 export const useScrollTransforms = () => {
@@ -12,12 +12,5 @@ export const useScrollTransforms = () => {
         );
     }, [scrollY]);
 
-    // Create a memoized array of springs based on transforms
-    const springs = useMemo(() => {
-        return transforms.map(transform =>
-            useSpring(transform, { stiffness: 300, damping: 30 })
-        );
-    }, [transforms]);
-
-    return springs;
+    return transforms;
 };
