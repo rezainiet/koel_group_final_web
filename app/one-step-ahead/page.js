@@ -35,7 +35,7 @@ const OneStepAhead = () => {
             <section className="container mx-auto px-4 py-16">
                 <div className="mb-16 text-center">
                     <h2 className="text-4xl font-semibold text-white mb-4">
-                        Let's go One Step Ahead
+                        Let&apos;s go One Step Ahead
                     </h2>
                     <div className="flex justify-center mb-8">
                         <div className="w-3 h-3 rounded-full bg-[#6AC9D0] mx-1"></div>
@@ -43,7 +43,7 @@ const OneStepAhead = () => {
                         <div className="w-12 h-3 rounded-full bg-[#6AC9D0] mx-1"></div>
                     </div>
                     <p className="text-lg leading-relaxed max-w-4xl mx-auto">
-                        "Let's go One Step Ahead" embodies Koel Group's ethos. We constantly push boundaries, embracing innovation and sustainability. With unwavering dedication, we lead the industry, leaving a lasting mark. Our commitment to progress drives us to continually redefine what's possible, shaping a brighter future for all.
+                        Let&apos;s go One Step Ahead&quot; embodies Koel Group&apos;s ethos. We constantly push boundaries, embracing innovation and sustainability. With unwavering dedication, we lead the industry, leaving a lasting mark. Our commitment to progress drives us to continually redefine what&apos;s possible, shaping a brighter future for all.
                     </p>
                 </div>
 

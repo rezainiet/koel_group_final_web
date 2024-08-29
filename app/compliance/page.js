@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 
 const Compliance = () => {
     return (
@@ -42,8 +43,7 @@ const Compliance = () => {
                         The Koel Group is unwaveringly dedicated to fulfilling the strictest requirements for clothing compliance. We place a high priority on the health of our employees, follow strict environmental rules, and conduct business ethically. Beyond adherence, our dedication to compliance forms the foundation of our business identity.
                     </p>
                     <p className="text-lg leading-relaxed max-w-3xl mx-auto mt-6">
-                        We make ongoing investments to guarantee secure and environmentally friendly production procedures while maintaining a work environment that respects honesty, equality, and openness. The Koel Group's unrelenting commitment to compliance underlines our commitment to providing products of excellent quality and integrity to our esteemed clients as well as our responsibilities to society and the environment.
-                    </p>
+                        We make ongoing investments to guarantee secure and environmentally friendly production procedures while maintaining a work environment that respects honesty, equality, and openness. The Koel Group&apos;s unrelenting commitment to compliance underlines our commitment to providing products of excellent quality and integrity to our esteemed clients as well as our responsibilities to society and the environment.                    </p>
                 </div>
             </section>
 
@@ -59,7 +59,9 @@ const Compliance = () => {
                     >
                         {/* Certification 1 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                            <img
+                            <Image
+                                width={300}
+                                height={200}
                                 src="https://via.placeholder.com/300x200"
                                 alt="ISO 9001:2015 Certification"
                                 className="w-full h-40 object-cover mb-4 rounded"
@@ -72,7 +74,9 @@ const Compliance = () => {
 
                         {/* Certification 2 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                            <img
+                            <Image
+                                width={300}
+                                height={200}
                                 src="https://via.placeholder.com/300x200"
                                 alt="OEKO-TEX® Standard 100"
                                 className="w-full h-40 object-cover mb-4 rounded"
@@ -85,7 +89,9 @@ const Compliance = () => {
 
                         {/* Certification 3 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                            <img
+                            <Image
+                                width={300}
+                                height={200}
                                 src="https://via.placeholder.com/300x200"
                                 alt="Sedex SMETA"
                                 className="w-full h-40 object-cover mb-4 rounded"
@@ -98,7 +104,9 @@ const Compliance = () => {
 
                         {/* Award 1 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                            <img
+                            <Image
+                                width={300}
+                                height={200}
                                 src="https://via.placeholder.com/300x200"
                                 alt="Best Ethical Manufacturer 2023"
                                 className="w-full h-40 object-cover mb-4 rounded"
@@ -111,7 +119,9 @@ const Compliance = () => {
 
                         {/* Award 2 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                            <img
+                            <Image
+                                width={300}
+                                height={200}
                                 src="https://via.placeholder.com/300x200"
                                 alt="Green Factory Award 2022"
                                 className="w-full h-40 object-cover mb-4 rounded"
@@ -124,7 +134,9 @@ const Compliance = () => {
 
                         {/* Award 3 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                            <img
+                            <Image
+                                width={300}
+                                height={200}
                                 src="https://via.placeholder.com/300x200"
                                 alt="Social Compliance Excellence"
                                 className="w-full h-40 object-cover mb-4 rounded"

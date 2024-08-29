@@ -73,10 +73,10 @@ const rnd = () => {
                             transition={{ duration: 1.2 }}
                         >
                             <p className="text-lg leading-relaxed">
-                                The core of Koel Group's fashion-forward strategy is our Garments Innovation R&D. Using cutting-edge tools and innovative design ideas, we relentlessly investigate the nexus between art and science. The goal of our team is to provide clothing that embodies innovation, style, and functionality while redefining the apparel business.
+                                The core of Koel Group&apos;s fashion-forward strategy is our Garments Innovation R&D. Using cutting-edge tools and innovative design ideas, we relentlessly investigate the nexus between art and science. The goal of our team is to provide clothing that embodies innovation, style, and functionality while redefining the apparel business.
                             </p>
                             <p className="text-lg leading-relaxed mt-4">
-                                We are innovators in changing how people dress, using anything from sustainable materials to smart textiles. By setting new benchmarks for fashion excellence and pushing the limits of innovation in the apparel business, Koel Group's Garments Innovation R&D ensures that our collections surpass the constantly changing expectations of our clients.
+                                We are innovators in changing how people dress, using anything from sustainable materials to smart textiles. By setting new benchmarks for fashion excellence and pushing the limits of innovation in the apparel business, Koel Group&apos;s Garments Innovation R&D ensures that our collections surpass the constantly changing expectations of our clients.
                             </p>
                         </motion.div>
                     </div>

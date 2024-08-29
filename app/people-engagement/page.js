@@ -43,7 +43,7 @@ const PeopleEngagement = () => {
                         <div className="w-12 h-3 rounded-full bg-[#6AC9D0] mx-1"></div>
                     </div>
                     <p className="text-lg leading-relaxed max-w-4xl mx-auto">
-                        The Koel Group is extremely proud of its outstanding HR team. They are the ones who work tirelessly to recruit, train, and keep top talent; they are the builders of our workforce's success. They create a vibrant organizational culture with their unrelenting dedication, ensuring that our employees continue to be our most important resource and driving force.
+                        The Koel Group is extremely proud of its outstanding HR team. They are the ones who work tirelessly to recruit, train, and keep top talent; they are the builders of our workforce&apos;s success. They create a vibrant organizational culture with their unrelenting dedication, ensuring that our employees continue to be our most important resource and driving force.
                     </p>
                 </div>
 

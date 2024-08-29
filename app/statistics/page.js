@@ -123,7 +123,7 @@ const Statistics = () => {
                         Garments: 450,000 Pcs
                     </motion.div>
                     <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-                        The Koel Group's ability to produce 450,000 garments each month is evidence of our commitment to excellence and innovation. We are pushing the envelope in the fashion sector by utilizing cutting-edge technologies and a forward-thinking attitude.
+                        The Koel Group&apos;s ability to produce 450,000 garments each month is evidence of our commitment to excellence and innovation. We are pushing the envelope in the fashion sector by utilizing cutting-edge technologies and a forward-thinking attitude.
                     </p>
                 </div>
             </section>
