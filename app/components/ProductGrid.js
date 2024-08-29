@@ -4,20 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import Image from 'next/image'
-
-const useScrollTransforms = () => {
-    const { scrollY } = useScroll()
-
-    // Create transformations for each card based on scroll position
-    const transforms = Array.from({ length: 6 }, (_, index) =>
-        useTransform(scrollY, [0, 1000], [0, -index * 10])
-    )
-
-    // Apply spring animation to each transformation
-    const springs = transforms.map(transform => useSpring(transform, { stiffness: 300, damping: 30 }))
-
-    return springs
-}
+import { useScrollTransforms } from './useScrollTransforms'
 
 const ProductGrid = () => {
     const [isClient, setIsClient] = useState(false)
