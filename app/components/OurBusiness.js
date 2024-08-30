@@ -3,20 +3,21 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import jayqoo from '@/public/images/homepage/jayqoo_textile_an.jpg'
-import koel_modish_apparels from '@/public/images/homepage/koel_modish.jpg'
-import agriculture_02 from '@/public/images/about_page/agriculture_02.jpg'
-import arham_diagnostic from '@/public/images/homepage/arham_diagnostic.jpg'
-import eCommerce from '@/public/images/homepage/e-commerce.jpg'
+import jayqoo from '@/public/images/homepage/jayqoo.png'
+import koel_modish_apparels from '@/public/images/homepage/koel_modish.png'
+import agriculture from '@/public/images/homepage/agriculture.png'
+import arham_diagnostic from '@/public/images/homepage/diagnostic.png'
+import eCommerce from '@/public/images/homepage/e-commerce.png'
+import majdi from '@/public/images/homepage/majdi.png'
 
 
 // Array of businesses with images
 const businesses = [
     { name: 'Jayqo Textile & Accessories Limited', image: jayqoo },
     { name: 'Koel Modish Apparels Limited', image: koel_modish_apparels },
-    { name: 'Anisha Agricultural Industry Limited', image: agriculture_02 },
+    { name: 'Anisha Agricultural Industry Limited', image: agriculture },
     { name: 'Arham Diagnostic Center', image: arham_diagnostic },
-    { name: 'Majdi - T-Shirt Brand', image: 'https://koelgroupbd.com/wp-content/uploads/2023/12/7-1-1.jpg' },
+    { name: 'Majdi - T-Shirt Brand', image: majdi },
     { name: 'Koel Shop - e-Commerce', image: eCommerce },
 ];
 

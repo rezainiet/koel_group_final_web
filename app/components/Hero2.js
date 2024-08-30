@@ -3,17 +3,18 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import cta1 from "@/public/images/cta/cta1.jpg";
-import cta2 from "@/public/images/cta/cta2.webp";
-
+import slider1 from "@/public/images/hero/slider_new_01.png";
+import slider2 from "@/public/images/hero/slider_new_02.png";
+import slider3 from "@/public/images/hero/slider_new_03.png";
 const Hero2 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const images = [cta1, cta2];
-    const titles = ["We never compromise on our Quality!", "Explore our Best Services"];
+    const images = [slider1, slider2, slider3];
+    const titles = ["We never compromise on our Quality!", "We never forgot our Commitment", "Enjoy the best and premium services!"];
     const descriptions = [
         "Stay updated with the latest news, project highlights, and CSR activities.",
         "Discover unparalleled services with top-notch quality and excellence.",
+        "Stay updated with the latest news, project highlights, and CSR activities.",
     ];
 
     useEffect(() => {
@@ -43,7 +44,7 @@ const Hero2 = () => {
                                 alt={`CTA Background ${index + 1}`}
                                 layout="fill"
                                 objectFit="cover"
-                                className="opacity-80"
+                                className="opacity-80 grayscale"
                             />
                         </motion.div>
                     )
