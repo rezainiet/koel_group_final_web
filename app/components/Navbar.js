@@ -67,32 +67,49 @@ const Navbar = () => {
         <header className="text-white top-0 fixed z-50 w-full">
             <nav className="flex justify-between items-center py-8 lg:py-4 px-12 bg-transparent">
                 <div className="flex items-center gap-2 md:gap-3">
-                    {/* Circular logo background */}
-
-                    {/* Logo Image */}
+                    {/* Logo with animation */}
                     <Link href="/">
-                        <span className="relative w-6 h-6 sm:w-24 sm:h-8 lg:w-28 lg:h-10 cursor-pointer" onClick={closeMenu}>
+                        <motion.div
+                            initial={{ scale: 1 }}
+                            whileHover={{ scale: 1 }} // Slightly enlarge the logo on hover
+                            whileTap={{ scale: 0.9 }} // Shrink the logo slightly on tap/click
+                            className="relative w-12 h-12 sm:w-30 sm:h-12 lg:w-36 lg:h-10 cursor-pointer"
+                            onClick={closeMenu}
+                        >
                             <Image
                                 src={koelGroupLogo}
                                 alt="Logo of koel group!"
-                                width={150}
-                                // layout='fill'
-                                objectFit='contain' // Ensures the image fits within the container without cropping
-                                objectPosition='center'
+                                width={170}
+                                objectFit="contain"
+                                objectPosition="center"
                             />
-                        </span>
+                        </motion.div>
                     </Link>
                 </div>
 
-
-                <div
-                    className="cursor-pointer lg:text-xl text-md text-white ml-auto"
+                <motion.div
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.1 }} // Enlarge the button on hover
+                    whileTap={{ scale: 0.8 }} // Shrink the button on tap/click
+                    transition={{ duration: 0.2, ease: 'easeInOut' }}
+                    className="cursor-pointer lg:text-xl text-md text-white ml-auto bg-sky-400 px-3 py-3 rounded-full"
                     onClick={toggleMenu}
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-7 h-7"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                        />
                     </svg>
-                </div>
+                </motion.div>
             </nav>
             <AnimatePresence>
                 {open && (

@@ -5,6 +5,7 @@ import { TextGenerateEffect } from './ui/text-generate-effect';
 import Image from 'next/image';
 import ErrorBoundary from './ErrorBoundary';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const ProductGrid = () => {
     const [isClient, setIsClient] = useState(false);
@@ -40,31 +41,34 @@ const ProductGrid = () => {
                 <div className='p-6'>
                     <div className='grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2'>
                         {products.map((product, index) => (
-                            <motion.div
+                            <Link href='/products'
                                 key={index}
-                                initial={{ opacity: 0, y: 60 }} // Reduced y-axis translation for smoother motion
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{
-                                    duration: 1, // Slightly longer duration for smoothness
-                                    ease: "easeInOut", // Smooth easing function
-                                    delay: index * 0.2 + 0.3, // Increased delay slightly
-                                }}
-                                viewport={{ once: false, amount: 0.2 }} // Trigger only once and slightly earlier
-                                className='bg-white transition-shadow duration-300 rounded-lg overflow-hidden'
                             >
-                                <div className='relative w-full h-60'>
-                                    <Image
-                                        src={product?.image}
-                                        alt={product?.name}
-                                        layout='fill'
-                                        objectFit='cover'
-                                        objectPosition='center'
-                                    />
-                                </div>
-                                <h1 className='text-start p-4 text-lg font-semibold'>
-                                    {product?.name}
-                                </h1>
-                            </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 60 }} // Reduced y-axis translation for smoother motion
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 1, // Slightly longer duration for smoothness
+                                        ease: "easeInOut", // Smooth easing function
+                                        delay: index * 0.2 + 0.3, // Increased delay slightly
+                                    }}
+                                    viewport={{ once: false, amount: 0.2 }} // Trigger only once and slightly earlier
+                                    className='bg-white transition-shadow duration-300 rounded-lg overflow-hidden'
+                                >
+                                    <div className='relative w-full h-60'>
+                                        <Image
+                                            src={product?.image}
+                                            alt={product?.name}
+                                            layout='fill'
+                                            objectFit='cover'
+                                            objectPosition='center'
+                                        />
+                                    </div>
+                                    <h1 className='text-start p-4 text-lg font-semibold'>
+                                        {product?.name}
+                                    </h1>
+                                </motion.div>
+                            </Link>
                         ))}
                     </div>
                 </div>
