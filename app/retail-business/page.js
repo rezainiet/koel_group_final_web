@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/retail-business/1.jpg";
 
 const RetailBusiness = () => {
     return (
@@ -55,8 +56,8 @@ const RetailBusiness = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
-                            alt="Koel Shop"
+                            src={img1}
+                            alt="Retail Business"
                             width={1200}
                             height={600}
                             className="w-full h-[400px] object-cover rounded-lg"

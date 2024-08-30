@@ -4,17 +4,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/corporate-culture/1.jpg"
+import img2 from "@/public/images/corporate-culture/2.jpg"
+import img3 from "@/public/images/corporate-culture/3.jpg"
+import img4 from "@/public/images/corporate-culture/4.jpg"
+import img5 from "@/public/images/corporate-culture/5.jpg"
+import img6 from "@/public/images/corporate-culture/6.jpg"
 
 const images = [
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300",
-    "https://via.placeholder.com/400x300"
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
 ];
 
 const CorporateCulture = () => {
@@ -80,7 +83,7 @@ const CorporateCulture = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/500x300"
+                            src={img4}
                             alt="Employee Goodwill"
                             width={500}
                             height={300}
@@ -106,7 +109,7 @@ const CorporateCulture = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/500x300"
+                            src={img6}
                             alt="Community Engagement"
                             width={500}
                             height={300}

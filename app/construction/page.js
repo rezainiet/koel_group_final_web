@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/construction/1.jpg";
+import img2 from "@/public/images/construction/2.jpg";
+import img3 from "@/public/images/construction/3.jpg";
+import img4 from "@/public/images/construction/4.jpg";
+import img5 from "@/public/images/construction/5.jpg";
+import img6 from "@/public/images/construction/6.jpg";
+import img7 from "@/public/images/construction/7.jpg";
 
 const Construction = () => {
     return (
@@ -35,7 +42,7 @@ const Construction = () => {
             <section className="container mx-auto px-4 py-16">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-semibold text-[#6AC9D0] mb-4">
-                        Quest Construction Company
+                        Quest
                     </h2>
                     <div className="flex justify-center mb-8">
                         <div className="w-3 h-3 rounded-full bg-[#6AC9D0] mx-1"></div>
@@ -52,7 +59,7 @@ const Construction = () => {
                 {/* Sustainable Building Section */}
                 <div className="relative flex flex-col lg:flex-row items-center bg-gray-900 rounded-lg overflow-hidden">
                     <Image
-                        src="https://via.placeholder.com/1200x600"
+                        src={img1}
                         alt="Sustainable Building"
                         width={1200}
                         height={600}
@@ -82,7 +89,7 @@ const Construction = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img2}
                                 alt="Gallery Image 1"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -90,7 +97,7 @@ const Construction = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img3}
                                 alt="Gallery Image 2"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -98,7 +105,7 @@ const Construction = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img4}
                                 alt="Gallery Image 3"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -106,7 +113,7 @@ const Construction = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img5}
                                 alt="Gallery Image 4"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -114,7 +121,7 @@ const Construction = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img6}
                                 alt="Gallery Image 5"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -122,7 +129,7 @@ const Construction = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img7}
                                 alt="Gallery Image 6"
                                 layout="fill"
                                 className="object-cover rounded-lg"

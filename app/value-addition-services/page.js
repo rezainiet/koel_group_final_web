@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/value-addition-services/1.jpg"
+import img2 from "@/public/images/value-addition-services/2.jpg"
 
 const ValueAdditionServices = () => {
     return (
@@ -78,7 +80,7 @@ const ValueAdditionServices = () => {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row items-center">
                         <Image
-                            src="https://via.placeholder.com/800x600"
+                            src={img1}
                             alt="Printing"
                             width={800}
                             height={600}
@@ -119,7 +121,7 @@ const ValueAdditionServices = () => {
                         </p>
                     </div>
                     <Image
-                        src="https://via.placeholder.com/800x600"
+                        src={img2}
                         alt="Embroidery"
                         width={800}
                         height={600}

@@ -4,11 +4,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import landmark_01 from "@/public/images/landmarks/landmark_01.jpg"
+import landmark_02 from "@/public/images/landmarks/landmark_02.jpg"
+import landmark_03 from "@/public/images/landmarks/landmark_03.jpg"
+import landmark_04 from "@/public/images/landmarks/landmark_04.jpg"
+import landmark_05 from "@/public/images/landmarks/landmark_05.jpg"
 
 const landmarks = [
-    "https://via.placeholder.com/600x400",
-    "https://via.placeholder.com/600x400",
-    "https://via.placeholder.com/600x400"
+    landmark_01,
+    landmark_02,
+    landmark_03,
 ];
 
 const Landmark = () => {
@@ -60,7 +65,7 @@ const Landmark = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={landmark_04}
                             alt="Sustainability"
                             width={1200}
                             height={600}
@@ -94,7 +99,7 @@ const Landmark = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/500x300"
+                            src={landmark_05}
                             alt="Legacy"
                             width={500}
                             height={300}

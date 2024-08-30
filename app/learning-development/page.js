@@ -3,6 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
+import img1 from "@/public/images/learning-and-development/1.jpg"
+import img2 from "@/public/images/learning-and-development/2.jpg"
+import img3 from "@/public/images/learning-and-development/3.jpg"
+import img4 from "@/public/images/learning-and-development/4.jpg"
+import img5 from "@/public/images/learning-and-development/5.jpg"
+import img6 from "@/public/images/learning-and-development/6.jpg"
 
 const LearningDevelopment = () => {
     return (
@@ -55,7 +61,7 @@ const LearningDevelopment = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         <div className="relative">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img1}
                                 alt="Learning Image 1"
                                 layout="responsive"
                                 width={400}
@@ -65,7 +71,7 @@ const LearningDevelopment = () => {
                         </div>
                         <div className="relative">
                             <Image
-                                src="https://via.placeholder.com/400x500"
+                                src={img2}
                                 alt="Learning Image 2"
                                 layout="responsive"
                                 width={400}
@@ -75,7 +81,7 @@ const LearningDevelopment = () => {
                         </div>
                         <div className="relative">
                             <Image
-                                src="https://via.placeholder.com/400x350"
+                                src={img3}
                                 alt="Learning Image 3"
                                 layout="responsive"
                                 width={400}
@@ -85,7 +91,7 @@ const LearningDevelopment = () => {
                         </div>
                         <div className="relative">
                             <Image
-                                src="https://via.placeholder.com/400x450"
+                                src={img4}
                                 alt="Learning Image 4"
                                 layout="responsive"
                                 width={400}
@@ -95,7 +101,7 @@ const LearningDevelopment = () => {
                         </div>
                         <div className="relative">
                             <Image
-                                src="https://via.placeholder.com/400x350"
+                                src={img5}
                                 alt="Learning Image 5"
                                 layout="responsive"
                                 width={400}
@@ -105,7 +111,7 @@ const LearningDevelopment = () => {
                         </div>
                         <div className="relative">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img6}
                                 alt="Learning Image 6"
                                 layout="responsive"
                                 width={400}

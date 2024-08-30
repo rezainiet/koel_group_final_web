@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/medical/1.jpg"
+import img2 from "@/public/images/medical/2.jpg"
+import img3 from "@/public/images/medical/3.jpg"
+import img4 from "@/public/images/medical/4.jpg"
+import img5 from "@/public/images/medical/5.jpg"
+import img6 from "@/public/images/medical/6.jpg"
+import img7 from "@/public/images/medical/7.jpg"
+import img8 from "@/public/images/medical/8.jpg"
 
 const ArhamDiagnosticCenter = () => {
     return (
@@ -54,7 +62,7 @@ const ArhamDiagnosticCenter = () => {
                 {/* Doctor Consultation Section */}
                 <div className="relative flex flex-col lg:flex-row items-center bg-gray-900 rounded-lg overflow-hidden">
                     <Image
-                        src="https://via.placeholder.com/1200x600"
+                        src={img2}
                         alt="Doctor Consultation"
                         width={1200}
                         height={600}
@@ -62,7 +70,7 @@ const ArhamDiagnosticCenter = () => {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-8">
                         <div className="text-center text-white max-w-lg">
-                            <h2 className="text-3xl font-semibold text-[#6AC9D0] mb-4">
+                            <h2 className="text-3xl font-semibold text-white mb-4">
                                 Doctor Consultation
                             </h2>
                             <p className="text-lg leading-relaxed">
@@ -84,7 +92,7 @@ const ArhamDiagnosticCenter = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img1}
                                 alt="Diagnostic Service 1"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -92,7 +100,7 @@ const ArhamDiagnosticCenter = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img3}
                                 alt="Diagnostic Service 2"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -100,7 +108,7 @@ const ArhamDiagnosticCenter = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img4}
                                 alt="Diagnostic Service 3"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -108,7 +116,7 @@ const ArhamDiagnosticCenter = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img5}
                                 alt="Diagnostic Service 4"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -116,7 +124,7 @@ const ArhamDiagnosticCenter = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img6}
                                 alt="Diagnostic Service 5"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -124,7 +132,7 @@ const ArhamDiagnosticCenter = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img7}
                                 alt="Diagnostic Service 6"
                                 layout="fill"
                                 className="object-cover rounded-lg"

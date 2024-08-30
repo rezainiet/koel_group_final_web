@@ -47,7 +47,7 @@ const OurBusiness = () => {
         <div className="flex flex-col md:flex-row w-full">
             {/* Static Text Section */}
             <div className="bg-black/70 text-white flex items-center justify-center w-full md:w-1/4 h-[20rem] md:h-auto p-8">
-                <h2 className="text-3xl font-bold">Other Businesses</h2>
+                <h2 className="text-3xl font-bold">Sister Concerns</h2>
             </div>
 
             {/* Carousel Section */}

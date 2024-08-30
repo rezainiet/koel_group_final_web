@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/garments/1.jpg"
 
 const Garments = () => {
     return (
@@ -57,7 +58,7 @@ const Garments = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img1}
                             alt="Knitting"
                             width={1200}
                             height={600}

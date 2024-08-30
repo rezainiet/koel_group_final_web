@@ -5,6 +5,9 @@ import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
+import img1 from "@/public/images/one-step-ahead/one-step-ahead-1.jpg"
+import img2 from "@/public/images/one-step-ahead/one-step-ahead-2.jpg"
+
 const OneStepAhead = () => {
     return (
         <main className="bg-gray-900 text-gray-100 min-h-screen">
@@ -54,7 +57,7 @@ const OneStepAhead = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img1}
                             alt="Fast Fashion"
                             width={1200}
                             height={600}
@@ -88,7 +91,7 @@ const OneStepAhead = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img2}
                             alt="Possibilities"
                             width={1200}
                             height={600}

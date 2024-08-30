@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/people-engagement/1.jpg"
+import img2 from "@/public/images/people-engagement/2.jpg"
+import img3 from "@/public/images/people-engagement/3.jpg"
 
 const PeopleEngagement = () => {
     return (
@@ -54,7 +57,7 @@ const PeopleEngagement = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img1}
                             alt="Joy of Life"
                             width={1200}
                             height={600}
@@ -88,7 +91,7 @@ const PeopleEngagement = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img2}
                             alt="Empowerment"
                             width={1200}
                             height={600}
@@ -123,7 +126,7 @@ const PeopleEngagement = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img3}
                             alt="Leadership Without Rank"
                             width={1200}
                             height={600}

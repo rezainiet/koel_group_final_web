@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import img1 from "@/public/images/agro/1.jpg"
+import img2 from "@/public/images/agro/2.jpg"
+import img3 from "@/public/images/agro/3.jpg"
+import img4 from "@/public/images/agro/4.jpg"
+import img5 from "@/public/images/agro/5.jpg"
+import img6 from "@/public/images/agro/6.jpg"
+import img7 from "@/public/images/agro/7.jpg"
 
 const Agro = () => {
     return (
@@ -51,7 +58,7 @@ const Agro = () => {
                 <div className="flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/2 mb-8 lg:mb-0">
                         <Image
-                            src="https://via.placeholder.com/1200x600"
+                            src={img1}
                             alt="Sustainable Farming"
                             width={1200}
                             height={600}
@@ -80,7 +87,7 @@ const Agro = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img2}
                                 alt="Gallery Image 1"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -88,7 +95,7 @@ const Agro = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img3}
                                 alt="Gallery Image 2"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -96,7 +103,7 @@ const Agro = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img4}
                                 alt="Gallery Image 3"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -104,7 +111,7 @@ const Agro = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img5}
                                 alt="Gallery Image 4"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -112,7 +119,7 @@ const Agro = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img6}
                                 alt="Gallery Image 5"
                                 layout="fill"
                                 className="object-cover rounded-lg"
@@ -120,7 +127,7 @@ const Agro = () => {
                         </div>
                         <div className="relative h-64">
                             <Image
-                                src="https://via.placeholder.com/400x300"
+                                src={img7}
                                 alt="Gallery Image 6"
                                 layout="fill"
                                 className="object-cover rounded-lg"
