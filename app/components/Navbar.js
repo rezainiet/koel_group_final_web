@@ -8,11 +8,12 @@ import Image from "next/image";
 import koelGroupLogo from "@/public/images/logo/KOEL_GROUP_logo-01.png"
 
 const navLinks = [
+    { title: "About", href: "/about" },
+    // { title: "Case studies", href: "/" },
+    { title: "Contact", href: "/contact" },
+    { title: "Products", href: "/products" },
     { title: "sustainability", href: "/sustainability" },
     { title: "CSR", href: "/csr" },
-    // { title: "Case studies", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
