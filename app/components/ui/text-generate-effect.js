@@ -16,6 +16,17 @@ export const TextGenerateEffect = ({
     useEffect(() => {
         // Ensure that scope is defined
         if (scope.current) {
+            // Reset opacity to 0 and blur effect before animating
+            animate(
+                scope.current.querySelectorAll("span"),
+                {
+                    opacity: 0,
+                    filter: filter ? "blur(10px)" : "none",
+                },
+                { duration: 0 } // No transition during reset
+            );
+
+            // Animate to the final state
             animate(
                 scope.current.querySelectorAll("span"),
                 {
@@ -23,12 +34,12 @@ export const TextGenerateEffect = ({
                     filter: filter ? "blur(0px)" : "none",
                 },
                 {
-                    duration: duration ? duration : 1,
+                    duration: duration,
                     delay: stagger(0.2),
                 }
             );
         }
-    }, [scope, animate, filter, duration]);
+    }, [scope, animate, filter, duration, words]); // Added `words` to dependencies
 
     const renderWords = () => {
         return (
@@ -37,7 +48,6 @@ export const TextGenerateEffect = ({
                     <motion.span
                         key={word + idx}
                         className={`text-${textColor} text-4xl md:text-6xl lg:text-7xl font-bold opacity-0`} // Apply color and size here
-                        // className="text-white text-4xl md:text-6xl lg:text-7xl font-bold opacity-0" // Apply color and size here
                         style={{
                             filter: filter ? "blur(10px)" : "none",
                         }}

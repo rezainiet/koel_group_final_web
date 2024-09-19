@@ -11,6 +11,7 @@ import koelGroupLogo from "@/public/images/logo/KOEL_GROUP_logo-01.png"
 // updated the navbar and the version upgraded to 0.1.1
 const navLinks = [
     { title: "About", href: "/about" },
+    { title: "Announcement", href: "/announcement" },
     // { title: "Case studies", href: "/" },
     { title: "Products", href: "/products" },
     { title: "sustainability", href: "/sustainability" },

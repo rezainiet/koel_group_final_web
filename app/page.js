@@ -5,6 +5,8 @@ import BodyShape from "./components/BodyShape";
 import OurBusiness from "./components/OurBusiness";
 import Sustainability from "./components/Sustainability";
 import ProductGrid from "./components/ProductGrid";
+import OurSpeciality from "./components/OurSpeciality";
+import GloriousHistory from "./components/GloriousHistory";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <GithubGlobe />
       <OurBusiness />
       <Sustainability />
+      <OurSpeciality />
+      <GloriousHistory />
       <ProductGrid />
       {/* <BodyShape /> */}
       {/* <Statistics /> */}
