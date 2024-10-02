@@ -10,7 +10,7 @@ import GloriousHistory from "./components/GloriousHistory";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gray-900">
       <Hero2 />
       <GithubGlobe />
       <OurBusiness />
