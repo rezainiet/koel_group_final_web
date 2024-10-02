@@ -1,7 +1,6 @@
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
-import Image from 'next/image'
 import { useRef, useState } from 'react'
 import { ChevronDown, Calendar, Gift, Mail, Bell } from 'lucide-react'
 
