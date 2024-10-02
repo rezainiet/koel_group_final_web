@@ -53,7 +53,7 @@ export default function BentoGridHero() {
                         </span>
                     </h1>
                     <p className="mx-auto max-w-2xl text-lg md:text-xl text-gray-300 leading-relaxed">
-                        From textiles to agriculture, healthcare to e-commerce, we're shaping the future of diverse sectors.
+                        From textiles to agriculture, healthcare to e-commerce, we&apos;re shaping the future of diverse sectors.
                     </p>
                 </motion.div>
 
